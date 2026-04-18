@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 👁️ Notice the World | Built for Creative Flourishing
 
-## Getting Started
+### 💡 The Philosophy
+In *Machines of Loving Grace*, Dario Amodei outlines a future where AI handles routine drudgery, freeing humans to engage in deeper, more meaningful cognitive work. But as machines automate the ordinary, our human attention spans are under siege by endless doomscrolling and digital numbness. **Notice the World** flips this paradigm: it uses cutting-edge AI not to do the work *for* you, but to actively retrain your human attention span. By forcing you to pause and deeply observe the mundane, this app uses the power of subjective AI evaluation to stretch your "noticing muscle".
 
-First, run the development server:
+### ⚙️ How It Works
+1. **The Snap:** Open the elegant mobile-first web app and use the native WebRTC integration to snap a quick photo of an ordinary, completely mundane object next to you.
+2. **The Hook:** The photo is securely analyzed by **Claude Sonnet 4.6 (Vision)**. Acting as an empathetic creative coach, it finds a tiny, easily overlooked detail in the frame and challenges you to describe it in an entirely new way.
+3. **The Flourish:** You submit your observation. **Claude Haiku 4.5** evaluates your wording for metaphor, poetic depth, and sensory scale. It then awards a celebratory multiplier (`[1x]`, `[3x]`, or `[5x]`) alongside tailored, encouraging feedback. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 🏗️ The Architecture
+*   **Frontend:** Next.js (App Router) combined with Tailwind CSS. Constrained strictly to mobile dimensions to prioritize touch UX, large interaction zones, and immersive focus.
+*   **Camera Integration:** Native browser `navigator.mediaDevices.getUserMedia` implemented to natively bypass desktop OS file pickers for a seamless "in-app" camera feel.
+*   **The 40% AI Integration:** Handled via custom Next.js API Routes. LLMs strictly act as subjective *art graders* here. The application requires advanced vision capabilities to identify details, and nuance-aware language models to subjectively grade literary effort—a task entirely impossible for deterministic code.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🚀 Get Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Configure the Environment**
+   Create a `.env.local` file at the root to securely house your API access:
+   ```env
+   ANTHROPIC_API_KEY="your-api-key-here"
+   ```
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Boot the Dev Server**
+   ```bash
+   npm run dev
+   ```
+   *Navigate to `http://localhost:3000` to break out of autopilot.*
