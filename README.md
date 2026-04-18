@@ -1,5 +1,7 @@
 # 👁️ Notice the World | Built for Creative Flourishing
 
+Built By Vijay Raghavan at CMUAI x Claude Builders Hackathon
+
 ### 💡 The Philosophy
 In *Machines of Loving Grace*, Dario Amodei outlines a future where AI handles routine drudgery, freeing humans to engage in deeper, more meaningful cognitive work. But as machines automate the ordinary, our human attention spans are under siege by endless doomscrolling and digital numbness. **Notice the World** flips this paradigm: it uses cutting-edge AI not to do the work *for* you, but to actively retrain your human attention span. By forcing you to pause and deeply observe the mundane, this app uses the power of subjective AI evaluation to stretch your "noticing muscle".
 
@@ -11,7 +13,11 @@ In *Machines of Loving Grace*, Dario Amodei outlines a future where AI handles r
 ### 🏗️ The Architecture
 *   **Frontend:** Next.js (App Router) combined with Tailwind CSS. Constrained strictly to mobile dimensions to prioritize touch UX, large interaction zones, and immersive focus.
 *   **Camera Integration:** Native browser `navigator.mediaDevices.getUserMedia` implemented to natively bypass desktop OS file pickers for a seamless "in-app" camera feel.
-*   **The 40% AI Integration:** Handled via custom Next.js API Routes. LLMs strictly act as subjective *art graders* here. The application requires advanced vision capabilities to identify details, and nuance-aware language models to subjectively grade literary effort—a task entirely impossible for deterministic code.
+*   **The AI Integration:** Handled via custom Next.js API Routes. LLMs strictly act as subjective *art graders* here. The application requires advanced vision capabilities to identify details, and nuance-aware language models to subjectively grade literary effort—a task entirely impossible for deterministic code.
+
+### 🏗️ The Future
+
+This is an app that encourages mindfulness and being observant, I envisage this as a fully gamified and social experience. 
 
 ### 🚀 Get Started
 
